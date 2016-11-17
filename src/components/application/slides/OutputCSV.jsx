@@ -15,7 +15,7 @@ class OutputCSV extends Component {
 
     downloadData() {
         var stringData = JSON.stringify(applicationData, undefined, 2)
-        var downloadData = json2csv({data:applicationData})
+        // var downloadData = json2csv({data:applicationData})
         // console.log(JSON.parse(stringData))
         // console.log(downloadData);
         download(stringData, "NSLP Data.txt", "text/plain");
