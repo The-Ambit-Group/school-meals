@@ -1,27 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { observer } from 'mobx-react'
 import { organization } from '../../../config'
 
 
 
-// @observer
-class OutputCSV extends Component{
-    constructor(props) {
-        super(props);
-    }
+@observer
+class OutputCSV extends Component {
+    // constructor(props, context) {
+    //     super(props, context);
+    //     console.log('Props:',props)
+    //     console.log('Context:',context)
+    // }
 
-    downloadData(){
-        var _dataTest =[['Bryan'],['Jacob']];
-        console.log(_dataTest);
-        console.log(this.props.applicationData);
-        var csv = Papa.unparse(_dataTest);
-        var downloadUri = 'data:Application/octet-stream,' + encodeURIComponent(csv);
-        var download = window.open(downloadUri, 'Final Data Set');
+
+    downloadData() {
+        var stringData = JSON.stringify(applicationData, undefined, 2)
+        // var downloadData = json2csv({data:applicationData})
+        // console.log(downloadData);
+        download(stringData, "NSLP Data.html", "text/html");
     }
 
     render() {
+        const {applicationData} = this.props
+
         return (
-            <button onClick={this.downloadData}>Download Data as CSV</button>
+            <div>
+                <button onClick={this.downloadData}>Download Data</button>
+            </div>
         )
     }
 }
