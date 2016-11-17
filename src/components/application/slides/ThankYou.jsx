@@ -10,7 +10,6 @@ class ThankYou extends Component {
   render() {
     return (
       <Slide header="Thank you for applying for school meal benefits!" id="thank-you"
-        // showBack={false} nextText="View Final Data Set" beginsSection>
         showBack={false} nextText="View Final Data Set" beginsSection>
         <p>Your application has been submitted.</p>
         <p>{thankYou}</p>
