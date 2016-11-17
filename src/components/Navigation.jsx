@@ -56,7 +56,10 @@ class Navigation extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={2} onClick={this.handleData}>
+      
+    {/* To re enable the Data navigation icon, simply remove lines */}             
+            {/*             
+              <NavItem eventKey={2} onClick={this.handleData}>
               <Glyphicon glyph="list-alt" />&nbsp;
               <FormattedMessage
                   id="nav.data"
@@ -64,6 +67,7 @@ class Navigation extends Component {
                   defaultMessage="Data"
               />
             </NavItem>
+          */}
             <NavItem eventKey={1} onClick={this.handleHelp}>
               <Glyphicon glyph="question-sign" />&nbsp;
               <FormattedMessage
