@@ -2,7 +2,7 @@
   "footer.notRealDisclaimer": "ESTA NO ES UNA SOLICITUD REAL PARA OBTENER BENEFICIOS DE COMIDAS ESCOLARES",
 
   "nav.title": "{organizationName} Solicitud para obtener comidas escolares gratis y a precio reducido",
-  "nav.shortTitle": "{organizationShortName} Solicitud para obtener comidas escolares",
+  "nav.shortTitle": "Obtener comidas escolares",
   "nav.help": "Ayuda",
 
   "progress.begin": "Empezar",
@@ -448,7 +448,8 @@
 
   "help.searchResults": "Resultados de la búsqueda",
 
-  "help.faq": "Preguntas frecuentes",
+  "help.articleDefinitionSection.header": "Definiciones",
+  "help.articleFaqSection.header": "Preguntas frecuentes",
 
   "help.articles.helpText.newAppTitle": "La solicitud de mi hijo fue aprobada el año pasado. ¿Debo completar una nueva?",
   "help.articles.helpText.newAppBody": "Sí. La elegibilidad para recibir comidas gratis o a precio reducido solo dura un año escolar. Sin embargo, la elegibilidad del año anterior continúa durante los primeros días del nuevo año escolar o hasta que se determine la nueva elegibilidad. Complete una nueva solicitud, a menos que haya recibido una carta de la escuela que diga que su hijo es elegible para el siguiente {schoolYear} año escolar.",
@@ -519,7 +520,7 @@
   "help.articles.helpText.disagreeTitle": "¿Qué sucede si no estoy de acuerdo con la decisión de la escuela con respecto a mi solicitud?",
   "help.articles.helpText.disagreeBody": "Debe hablar con los funcionarios de la escuela. También podría solicitar una audiencia ya sea llamando o escribiendo a: {organizationName} ({organizationPhone} / {organizationEmail} / {organizationAddress}).",
   "help.articles.helpText.mckinneyTerm": "{mckinneyShortName}",
-  "help.articles.helpText.mckinneyDef": "{mckinneyShortName} brinda dinero a programas de refugio para personas sin vivienda y facilita el acceso a escuelas públicas para niños y jóvenes.",
+  "help.articles.helpText.mckinneyDef": "{mckinneyFullName} brinda dinero a programas de refugio para personas sin vivienda y facilita el acceso a escuelas públicas para niños y jóvenes.",
   "help.articles.helpText.mepTerm": "{mepFullName} ({mepAccronym})",
   "help.articles.helpText.mepDef": "{mepAccronym} brinda servicios a niños que se han mudado a otros distritos escolares en los últimos tres años para acompañar a un padre o tutor que busca obtener trabajo temporal o por temporada en agricultura o pesca.",
   "help.articles.helpText.runawayHomelessActTerm": "{programRunaway}",

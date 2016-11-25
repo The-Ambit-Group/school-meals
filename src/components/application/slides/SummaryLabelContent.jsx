@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { observer } from 'mobx-react'
 import { Glyphicon } from 'react-bootstrap'
-import SummaryEditLink from './SummaryEditLink'
+import EditLink from '../EditLink'
 import Link from '../Link'
 
 @observer
@@ -11,15 +11,11 @@ class SummaryLabelContent extends Component {
       <span>
         {this.props.id
          ?
-         <span>
-           <Link id={this.props.id}>{this.props.children}</Link>
-           {' '}
-           <Link id={this.props.id}>
-             <Glyphicon glyph="edit" />
-           </Link>
+         <span key={this.props.id}>
+           <EditLink id={this.props.id}>{this.props.children}</EditLink>
          </span>
          :
-         this.props.children
+         <span>this.props.children</span>
         }
       </span>
     )

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import SummaryEditLink from './SummaryEditLink'
+import EditLink from '../EditLink'
 import SummaryPersonIncome from './SummaryPersonIncome'
 import { observer } from 'mobx-react'
 import { applicableIncomeSources, fullName } from '../../../helpers'
@@ -9,10 +9,14 @@ import {FormattedMessage} from 'react-intl'
 class SummaryPerson extends Component {
   render() {
     const { person, showDetails } = this.props
+    const editLinkId = showDetails && person.isAdult ?
+                       `income/${person.id}` :
+                       undefined
 
     return (
       <li>
         {fullName(person)}
+        {editLinkId && <EditLink id={editLinkId} />}
         {showDetails &&
         <ul>
           {person.isFoster &&
@@ -23,7 +27,7 @@ class SummaryPerson extends Component {
                  defaultMessage="Foster child "
              />
              {' '}
-             <SummaryEditLink id="foster" />
+             <EditLink id="foster" />
            </li>}
 
           {person.isMigrant &&
@@ -34,7 +38,7 @@ class SummaryPerson extends Component {
                  defaultMessage="Migrant youth "
              />
              {' '}
-             <SummaryEditLink id="other-programs" />
+             <EditLink id="other-programs" />
            </li>}
 
           {person.isHomeless &&
@@ -45,7 +49,7 @@ class SummaryPerson extends Component {
                  defaultMessage="Homeless youth "
              />
              {' '}
-             <SummaryEditLink id="other-programs" />
+             <EditLink id="other-programs" />
            </li>}
 
           {person.isRunaway &&
@@ -56,7 +60,7 @@ class SummaryPerson extends Component {
                  defaultMessage="Runaway youth "
              />
              {' '}
-             <SummaryEditLink id="other-programs" />
+             <EditLink id="other-programs" />
            </li>}
 
           {applicableIncomeSources(person).map(income =>

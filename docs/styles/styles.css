@@ -12,6 +12,10 @@ a {
   cursor: pointer;
 }
 
+a:visited {
+  color: #0071bc;
+}
+
 a:hover {
   color: #205493;
 }
@@ -36,8 +40,8 @@ main {
   text-decoration: none;
 }
 
-#summary a:visited {
-  color: #0071bc;
+#summary h4 a:hover {
+  text-decoration: underline;
 }
 
 #summary fieldset {
@@ -50,10 +54,6 @@ abbr[title] {
 
 label small {
   font-weight: normal;
-}
-
-.income-source-details {
-  overflow: auto;
 }
 
 .income-source-details .usa-input-grid input,
@@ -112,7 +112,6 @@ footer .not-real-disclaimer {
 .info-target {
   border-bottom: 1px dotted #337ab7;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 .info-target .glyphicon {
@@ -215,6 +214,10 @@ footer .not-real-disclaimer {
 
   main {
     padding-top: 50px;
+  }
+
+  .info-target {
+    white-space: nowrap;
   }
 
   .slide-content {
