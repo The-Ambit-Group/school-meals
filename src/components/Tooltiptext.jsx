@@ -38,6 +38,7 @@ export const tooltiptext = {
   tanf: <FormattedMessage
     id="tooltip.tanf"
     description="Tooltip text explaining TANF."
+    defaultMessage="{tanfFullName} ({tanfAccronym}) program is designed to help needy familities achieve self-sufficiency by providing cash assistance, as well as other supports and services."
     values={{
       tanfFullName: assistanceProgramsVar.tanf.fullName,
       tanfAccronym: assistanceProgramsVar.tanf.accronym
